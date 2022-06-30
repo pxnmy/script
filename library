@@ -953,7 +953,7 @@ function library:CreateWindow(name, size, hidebutton)
 
 				textbox.Gradient = Instance.new("UIGradient", textbox.Holder)
 				textbox.Gradient.Rotation = 90
-				textbox.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(140, 140, 140)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(128, 128, 128)) })
+				textbox.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 51, 153)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 68, 204)) })
 
 				textbox.Main = Instance.new("TextBox", textbox.Holder)
 				textbox.Main.PlaceholderText = textbox.text
