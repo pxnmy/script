@@ -354,7 +354,7 @@ function library:CreateWindow(name, size, hidebutton)
 			block = true
 			for i,v in pairs(window.Tabs) do
 				if v ~= tab then
-					v.TabButton.TextColor3 = Color3.fromRGB(230, 230, 230)
+					v.TabButton.TextColor3 = Color3.fromRGB(0, 0, 51)
 					v.TabPage.Visible = false
 				end
 			end
