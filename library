@@ -18,20 +18,21 @@ library.theme = {
 	fontsize = 15,
 	font = Enum.Font.Code,
 	background = "rbxassetid://6880496154",
-	backgroundcolor = Color3.fromRGB(0, 0, 153),
-	tabstextcolor = Color3.fromRGB(255, 255, 255),
-	accentcolor = Color3.fromRGB(0, 27, 77),
-	accentcolor2 = Color3.fromRGB(26, 26, 26),
-	outlinecolor = Color3.fromRGB(0, 0, 102),
+	backgroundcolor = Color3.fromRGB(20, 20, 20),
+	tabstextcolor = Color3.fromRGB(230, 230, 230),
+	bordercolor = Color3.fromRGB(60, 60, 60),
+	accentcolor = Color3.fromRGB(99, 95, 98),
+	accentcolor2 = Color3.fromRGB(99, 95, 98),
+	outlinecolor = Color3.fromRGB(60, 60, 60),
 	outlinecolor2 = Color3.fromRGB(0, 0, 0),
-	sectorcolor = Color3.fromRGB(0, 61, 102),
+	sectorcolor = Color3.fromRGB(30, 30, 30),
 	toptextcolor = Color3.fromRGB(255, 255, 255),
 	topheight = 48,
-	topcolor = Color3.fromRGB(0, 31, 77),
-	topcolor2 = Color3.fromRGB(0, 41, 102),
-	buttoncolor = Color3.fromRGB(0, 41, 102),
-	buttoncolor2 = Color3.fromRGB(0, 51, 128),
-	itemscolor = Color3.fromRGB(0, 122, 204)
+	topcolor = Color3.fromRGB(30, 30, 30),
+	topcolor2 = Color3.fromRGB(12, 12, 12),
+	buttoncolor = Color3.fromRGB(49, 49, 49),
+	buttoncolor2 = Color3.fromRGB(39, 39, 39),
+	itemscolor = Color3.fromRGB(200, 200, 200)
 }
 
 function library:CreateWatermark(name)
@@ -353,7 +354,7 @@ function library:CreateWindow(name, size, hidebutton)
 			block = true
 			for i,v in pairs(window.Tabs) do
 				if v ~= tab then
-					v.TabButton.TextColor3 = Color3.fromRGB(0, 0, 51)
+					v.TabButton.TextColor3 = Color3.fromRGB(230, 230, 230)
 					v.TabPage.Visible = false
 				end
 			end
@@ -570,7 +571,7 @@ function library:CreateWindow(name, size, hidebutton)
 				toggle.Main.ZIndex = 4 
 				toggle.Main.Font = Enum.Font.SourceSans
 				toggle.Main.Text = ""
-				toggle.Main.TextColor3 = Color3.fromRGB(51, 153, 255)
+				toggle.Main.TextColor3 = Color3.fromRGB(0, 0, 0)
 				toggle.Main.TextSize = 14
 
 				toggle.Outline = Instance.new("Frame", toggle.Main)
@@ -948,15 +949,15 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Holder.ZIndex = 4
 				textbox.Holder.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 14)
 				textbox.Holder.BorderSizePixel = 0
-				textbox.Holder.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
+				textbox.Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 
 				textbox.Gradient = Instance.new("UIGradient", textbox.Holder)
 				textbox.Gradient.Rotation = 90
-				textbox.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 51, 153)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 68, 204)) })
+				textbox.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(49, 49, 49)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(39, 39, 39)) })
 
 				textbox.Main = Instance.new("TextBox", textbox.Holder)
 				textbox.Main.PlaceholderText = textbox.text
-				textbox.Main.PlaceholderColor3 = Color3.fromRGB(0, 51, 153)
+				textbox.Main.PlaceholderColor3 = Color3.fromRGB(190, 190, 190)
 				textbox.Main.Text = ""
 				textbox.Main.BackgroundTransparency = 1
 				textbox.Main.Font = window.theme.font
@@ -967,9 +968,9 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Main.TextScaled = true
 				textbox.Main.Size = textbox.Holder.Size
 				textbox.Main.TextSize = 13
-				textbox.Main.TextColor3 = Color3.fromRGB(0, 51, 153)
+				textbox.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
 				textbox.Main.BorderSizePixel = 0
-				textbox.Main.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
+				textbox.Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 				function textbox:Set(text)
 					textbox.value = text
 					textbox.Main.Text = text
