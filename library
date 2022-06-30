@@ -971,6 +971,7 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Main.TextColor3 = Color3.fromRGB(0, 51, 153)
 				textbox.Main.BorderSizePixel = 0
 				textbox.Main.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
+                                textbox.Main.Colour = Colour3.fromRGB(0, 68, 204)
 				function textbox:Set(text)
 					textbox.value = text
 					textbox.Main.Text = text
