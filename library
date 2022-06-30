@@ -20,7 +20,6 @@ library.theme = {
 	background = "rbxassetid://6880496154",
 	backgroundcolor = Color3.fromRGB(0, 0, 153),
 	tabstextcolor = Color3.fromRGB(255, 255, 255),
-	bordercolor = Color3.fromRGB(51, 51, 153),
 	accentcolor = Color3.fromRGB(0, 27, 77),
 	accentcolor2 = Color3.fromRGB(26, 26, 26),
 	outlinecolor = Color3.fromRGB(0, 0, 102),
@@ -971,7 +970,6 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Main.TextColor3 = Color3.fromRGB(0, 51, 153)
 				textbox.Main.BorderSizePixel = 0
 				textbox.Main.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
-                                textbox.Main.Colour = Colour3.fromRGB(0, 68, 204)
 				function textbox:Set(text)
 					textbox.value = text
 					textbox.Main.Text = text
