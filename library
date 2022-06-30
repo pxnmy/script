@@ -949,7 +949,7 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Holder.ZIndex = 4
 				textbox.Holder.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 14)
 				textbox.Holder.BorderSizePixel = 0
-				textbox.Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				textbox.Holder.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
 
 				textbox.Gradient = Instance.new("UIGradient", textbox.Holder)
 				textbox.Gradient.Rotation = 90
