@@ -949,7 +949,7 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Holder.ZIndex = 4
 				textbox.Holder.Size = UDim2.fromOffset(sector.Main.Size.X.Offset - 12, 14)
 				textbox.Holder.BorderSizePixel = 0
-				textbox.Holder.BackgroundColor3 = Color3.fromRGB(204, 204, 204)
+				textbox.Holder.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
 
 				textbox.Gradient = Instance.new("UIGradient", textbox.Holder)
 				textbox.Gradient.Rotation = 90
@@ -957,7 +957,7 @@ function library:CreateWindow(name, size, hidebutton)
 
 				textbox.Main = Instance.new("TextBox", textbox.Holder)
 				textbox.Main.PlaceholderText = textbox.text
-				textbox.Main.PlaceholderColor3 = Color3.fromRGB(190, 190, 190)
+				textbox.Main.PlaceholderColor3 = Color3.fromRGB(0, 51, 153)
 				textbox.Main.Text = ""
 				textbox.Main.BackgroundTransparency = 1
 				textbox.Main.Font = window.theme.font
@@ -968,9 +968,9 @@ function library:CreateWindow(name, size, hidebutton)
 				textbox.Main.TextScaled = true
 				textbox.Main.Size = textbox.Holder.Size
 				textbox.Main.TextSize = 13
-				textbox.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+				textbox.Main.TextColor3 = Color3.fromRGB(0, 51, 153)
 				textbox.Main.BorderSizePixel = 0
-				textbox.Main.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+				textbox.Main.BackgroundColor3 = Color3.fromRGB(0, 51, 153)
 				function textbox:Set(text)
 					textbox.value = text
 					textbox.Main.Text = text
