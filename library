@@ -32,7 +32,7 @@ library.theme = {
 	topcolor2 = Color3.fromRGB(0, 41, 102),
 	buttoncolor = Color3.fromRGB(0, 20, 51),
 	buttoncolor2 = Color3.fromRGB(0, 20, 51),
-	itemscolor = Color3.fromRGB(20, 20, 82)
+	itemscolor = Color3.fromRGB(0, 122, 204)
 }
 
 function library:CreateWatermark(name)
